@@ -50,6 +50,85 @@ body {
     }
 }
 
+.pledgr-primary-nav {
+    background: #262629;
+    height: 60px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    > li {
+        height: 100%;
+        float: left;
+        line-height: 60px;
+        color: #fff;
+        text-align: center;
+        padding: 0;
+        span.lnk {
+          text-transform: uppercase;
+          font-weight: 700;
+          display: block;
+          height: 100%;
+          width: 100%;
+          &.active {
+                background: #37373b;
+                color: #777;    
+            }
+        }
+        button.lnk {
+            background: #fcda27;
+            border: 0;
+            padding: 0;
+            line-height: 60px;
+            width: 100%;
+            height: 100%;
+        }
+        section.mod-search {
+            height: 100%;
+            line-height: 60px;
+            position: relative;
+            text-align: left;
+            > input[type="search"] {
+                background: rgba(0,0,0,0.8);
+                color: #999;
+                border: 0;
+                height: 30px;
+                margin: 0;
+                padding: 0;
+                line-height: 30px;
+                padding-left: 10px;
+                display: inline-block;
+                vertical-align: middle;
+                border-radius: 15px;
+                &:focus {
+                    outline: none;
+                }
+            }
+            > button {
+                vertical-align: middle;
+                height: 30px;
+                position: relative;
+                i {
+                    height: 100%;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    li.parent-nav {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            > li {
+                float: left;
+                width: 33.33333333%;
+                text-align: center;
+            }
+        }
+    }
+}
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
