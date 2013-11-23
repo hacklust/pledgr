@@ -1,0 +1,12 @@
+<div class="activity-grid pure-u-2-3">
+  <ul class="activity-feed" ng-controller="ActivitiesCtrl" isotope-container>
+    <li ng-repeat="a in activities" class="activity" isotope-item>
+      <div class="activity-wrapper">
+        <a href="/activities/{{a.id}}">
+          <img ng-src="/images/{{a.image}}">
+        </a>
+        <span class="activity-desc">{{a.description}}</span>
+      </div>
+    </li>
+  </ul>
+</div>
